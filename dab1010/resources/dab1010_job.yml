@@ -1,0 +1,22 @@
+# The main job for dab1010.
+resources:
+  jobs:
+    dab1010_job:
+      name: dab1010_job
+
+      schedule:
+        # Run every day at 8:37 AM
+        quartz_cron_expression: '44 37 8 * * ?'
+        timezone_id: Europe/Amsterdam
+
+      email_notifications:
+        on_failure:
+          - chagantikusumitha@gmail.com
+
+      tasks:
+        - task_key: notebook_task
+          existing_cluster_id: 0730-104018-jq2l3w3x
+          notebook_task:
+            notebook_path: ../src/notebook.ipynb
+        
+      
