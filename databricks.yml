@@ -18,7 +18,6 @@ targets:
     workspace:
       host: https://adb-3453996285387124.4.azuredatabricks.net
 
-  ## Optionally, there could be a 'staging' target here.
   ## (See Databricks docs on CI/CD at https://docs.databricks.com/dev-tools/bundles/ci-cd.html.)
   #
   # staging:
